@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="507dp"
+    android:orientation="vertical"
+    android:layout_width="379dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_constraintBottom_toBottomOf="parent"
+    tools:layout_editor_absoluteX="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:inputType="number"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_width="wrap_content" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Add"
+        android:onClick="add"/>
+
+    <TextView
+        android:ems="10"
+        android:id="@+id/TextView"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/TextView2"
+        android:layout_alignStart="@+id/TextView2"
+        android:layout_below="@+id/button"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:onClick="add"
+        android:text="Result: " />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView"
+        android:layout_alignBottom="@+id/TextView"
+        android:layout_alignEnd="@+id/TextView"
+        android:layout_alignRight="@+id/TextView"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0" />
+</LinearLayout>
